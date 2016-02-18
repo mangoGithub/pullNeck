@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html id="Xmas-2014">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>拉脖子</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="mobile-agent" content="format=html5;url=http://izhongmeng.com/">
+		<meta name="renderer" content="webkit">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="format-detection" content="telephone=no">
+
+		<link rel="shortcut icon" type="image/x-icon" href="">
+		<link rel="apple-touch-icon-precomposed" href="">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+		<script>
+			(function() {
+		      	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		      	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		        var fontSize = Math.min(w, h)/32;
+		        if(fontSize > 16) {
+		          fontSize = 16;
+		        }
+		        document.getElementsByTagName('html')[0].setAttribute("style", "font-size:" + fontSize + "px");
+		      }());
+		</script>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<link rel="stylesheet" href="css/css.css">
+		<script>
+			user_id = "";
+			user_token = "";
+		</script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="scroller-wrapper">
+				<!--云-->
+				<div class="cloud-container">
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+					<div class="cloud-wrapper">
+						<div class="cloud"></div>
+					</div>
+				</div>
+				<!--背景-->
+				<div class="scroll-background"></div>
+				<!--人偶-->
+				<div class="character-wrapper">
+					<div class="idol-body idol-body-0"></div>
+					<div class="idol-head idol-head-0"></div>
+				</div>
+				<!--人偶背景台-->
+				<div class="pipe-container">
+					<div class="pipe-wrapper">
+						<div class="pipe-0 pipes"></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="guide-button"></div><!--帮助-->
+			<div class="share-button"></div>  <!--分享-->
+			<div class="rank">0 m</div>
+			<div class="high-rank">best:0 m</div>
+			<div class="single-rank" style="opacity: 0;">0 m</div>
+		</div>
+
+		<!--帮助提示信息-->
+		<div class="guide">
+			<div class="guide-theme-wrapper">
+				<div class="guide-pic"></div>
+				<div class="guide-idol-wrapper">
+					<div class="guide-idol-head"></div>
+					<div class="guide-idol-stretch"></div>
+				</div>
+				<div class="guide-gesture-l"></div>
+				<div class="guide-gesture-r"></div>
+			</div>
+			<div class="guide-text-1">圣诞吉祥物们被卡在烟囱里了</div>
+			<div class="guide-text-2">点击开始 / 不断上拉</div>
+			<div class="guide-text-3">看看能把它们的脖子拉多长吧</div>
+			<div class="guide-ok">OK</div>
+		</div>
+
+		<!--分享信息-->
+		<div style="display:none" class="share-panel">
+			<div class="share-panel-body">
+				<div class="share-bg"></div>
+				<div class="share-text"></div>
+				<div class="share-title">你的分数</div>
+				<div class="share-rank"></div>
+				<div class="QRcode" style="display: none;"><img src="img/qcode-yu.png" alt="二维码" width="40"></div>
+				<div class="share-info" style="display: none;">您还有xx.xx元微信红包未领取</div>
+				<div class="share-bind" style="display: none;"><a href="#">绑定手机号领红包</a></div>
+				
+				<div class="share-paly-angin">
+					<a href="#" class="share">分享</a>
+					<a href="#">再玩一次</a>
+				</div>
+				<div class="back-home">
+					<a href="#">返回首页</a>
+				</div>
+				
+			</div>
+			<div class="close-share-panel">×</div>
+		</div>
+		
+		<div class="success" style="display: none; position: absolute; left: 0; top: 0; z-index:99999910;">
+			绑定成功<br >
+			恭喜获得xx.xx元微信红包!
+			<br/>2天后红包将过期！
+			<a href="#">关注公众号并领取红包</a>
+		</div>
+		<div class="failed" style="display: none; position: absolute; left: 0; top: 0;z-index: 999910;">
+			绑定失败<br >
+			该手机号已注册众梦，请期待下次活动
+		</div>
+		<div class="share_mask" style="position: absolute; z-index: 100000000; width: 100%; height: 100%; left: 0; top: 0; display: none; color: #fff">分享高分，让那个朋友们Ian来挑战！</div>
+		
+		<div id="log">
+			
+		</div>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/js2.js"></script>
+		<script>
+			$.fx.interval = 16;
+		      if ('addEventListener' in document) {
+		      	document.addEventListener('DOMContentLoaded', function() {
+		      		FastClick.attach(document.body);
+		      	}, false);
+		      }
+		</script>
+		<script>
+			 user_id ='' ;
+		      function openProfile(uid){
+		      	if(uid != "" && uid != undefined){
+		      		//var url = 'same2.0://user/'+uid;
+		      		var url='';
+		      		window.location.href= url;
+		      	}
+		      }
+		</script>
+
+	</body>
+
+</html>
